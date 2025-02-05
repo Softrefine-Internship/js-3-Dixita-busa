@@ -14,3 +14,16 @@
 //     "Maxx": 15
 // }
 
+"use strict";
+let arr = [
+  ["John", 12],
+  ["Jack", 13],
+  ["Matt", 14],
+  ["Maxx", 15],
+];
+let obj = {};
+
+for (let i = 0; i < arr.length; i++) {
+  obj[arr[i][0]] = arr[i][1];
+}
+console.log(obj);
