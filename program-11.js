@@ -14,8 +14,7 @@
 
 "use strict";
 function checkStringAnagram(str1, str2) {
-  let cleanedStr1 = "",
-    cleanedStr2 = "";
+  let cleanedStr1 = "", cleanedStr2 = "";
   for (let i = 0; i < str1.length; i++)
     if (str1[i] !== " ") cleanedStr1 += str1[i].toLowerCase();
   for (let i = 0; i < str2.length; i++)

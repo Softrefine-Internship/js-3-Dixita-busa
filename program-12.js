@@ -21,12 +21,28 @@ let arr = [
     "Ruby",
     "Swift",
 ]
-let longest = arr[0];
 
-for (let i = 1; i < arr.length; i++) {
-    if (arr[i].length > longest.length) {
-      longest = arr[i];
-    }
+let arr2 = [
+  "Python",
+  "Java",
+  "C++",
+  "Ruby",
+  "Swift",
+];
+
+function findLongestWords(arr) {
+  let longest = [arr[0]];
+  let maxLength = arr[0].length;
+  for (let i = 1; i < arr.length; i++) {
+      if (arr[i].length > maxLength) {
+          maxLength = arr[i].length;
+          longest = [arr[i]]; 
+      } else if (arr[i].length === maxLength) {
+          longest[longest.length] = arr[i]; 
+      }
+  }
+  return longest;
 }
 
-console.log(longest);
+console.log(findLongestWords(arr)); 
+console.log(findLongestWords(arr2)); 

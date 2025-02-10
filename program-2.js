@@ -15,7 +15,7 @@
 // }
 
 "use strict";
-let arr = [
+const arr = [
   ["John", 12],
   ["Jack", 13],
   ["Matt", 14],

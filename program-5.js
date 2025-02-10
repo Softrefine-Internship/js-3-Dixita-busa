@@ -36,7 +36,7 @@
 // ]
 
 "use strict";
-let arr = [
+const arr = [
   {
     employeeName: "Ram",
     employeeId: 23,

@@ -24,7 +24,7 @@
 // ]
 
 "use strict";
-let arr = [
+const arr = [
   {
     employee_id: 1,
     employee_name: "Aman",
@@ -39,10 +39,14 @@ let arr = [
   },
 ];
 
-for (let i = 0; i < arr.length; i++) {
-  if (arr[i].employee_id === 2) {
-    arr[i].employee_name = "Rahul"; 
+const modifyEmployeeName = (arr, id, newName) => {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].employee_id === id) {
+      arr[i].employee_name = newName;
+      break; 
+    }
   }
-}
+  return arr;
+};
 
-console.log(arr);
+console.log(modifyEmployeeName(arr, 2, "Rahul"));

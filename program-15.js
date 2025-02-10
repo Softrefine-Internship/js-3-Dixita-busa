@@ -23,10 +23,10 @@ function checkSubset(set1, set2) {
   return true;
 }
 
-let set1 = new Set([1, 2, 3, 4, 5]);
-let set2 = new Set([3, 4]);
+const set1 = new Set([1, 2, 3, 4, 5]);
+const set2 = new Set([3, 4]);
 console.log(checkSubset(set1, set2));
 
-let set3 = new Set([3, 4]);
-let set4 = new Set([1, 2, 3, 4, 5]);
+const set3 = new Set([3, 4]);
+const set4 = new Set([1, 2, 3, 4, 5]);
 console.log(checkSubset(set3, set4));

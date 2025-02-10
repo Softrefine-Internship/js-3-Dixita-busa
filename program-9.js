@@ -5,13 +5,28 @@
 
 "use strict";
 function generateAllCombinations(str) {
-  let combinations = [];
+  let combinations = []; 
+  let isUnique; 
   for (let i = 0; i < str.length; i++) {
     for (let j = i + 1; j <= str.length; j++) {
-      combinations.push(str.slice(i, j));
+      let substr = "";
+      for (let k = i; k < j; k++) {
+        substr += str[k];
+      }
+      isUnique = true;
+      for (let m = 0; m < combinations.length; m++) {
+        if (combinations[m] === substr) {
+          isUnique = false;
+          break;
+        }
+      }
+      if (isUnique) {
+        combinations[combinations.length] = substr;
+      }
     }
   }
   return combinations;
 }
 
-console.log(generateAllCombinations("Dog".toLowerCase()));
+console.log(generateAllCombinations("Dog"));    
+console.log(generateAllCombinations("Jimmy"));  

@@ -23,7 +23,7 @@
 // }
 
 "use strict";
-let obj = {
+const obj = {
   Company: "GeeksforGeeks",
   Address: "Noida",
   contact: +91 - 999999999,

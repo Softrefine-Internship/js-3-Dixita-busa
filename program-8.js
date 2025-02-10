@@ -24,7 +24,7 @@
 // total value for "quantity": 6
 
 "use strict";
-let arr = [
+const arr = [
     {
         product: "Laptop",
         price: 1000,

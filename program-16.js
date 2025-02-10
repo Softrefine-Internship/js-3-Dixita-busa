@@ -10,12 +10,11 @@
 function findIntersection(set1, set2) {
   let result = [];
   for (let ele of set1) {
-    if (set2.has(ele)) 
-      result.push(ele);
+    if (set2.has(ele)) result.push(ele);
   }
   return result;
 }
 
-let set1 = new Set([1, 2, 3, 4]);
-let set2 = new Set([3, 4, 5, 6]);
+const set1 = new Set([1, 2, 3, 4]);
+const set2 = new Set([3, 4, 5, 6]);
 console.log(findIntersection(set1, set2));
