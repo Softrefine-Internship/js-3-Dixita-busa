@@ -39,6 +39,7 @@ const arr = [
   { id: 3, name: "Bob", department: "Finance" },
   { id: 4, name: "Hank", department: "IT" },
 ];
+
 const arrayObj = [
   { prop_1: "val_1", prop_2: "val_2", prop_3: [1, 2, 3] },
   { prop_1: "val_4", prop_2: "val_5", prop_3: { id: 1 } },
@@ -68,6 +69,7 @@ const filterObjects = (arr, key, value) => {
   }
   return filteredArr;
 };
+
 console.log(filterObjects(arr, "department", "IT"));
 console.log(filterObjects(arrayObj, "prop_3", [1, 2, 3]));
 console.log(filterObjects(arrayObj, "prop_3", { id: 1 }));
